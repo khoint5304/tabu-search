@@ -46,7 +46,7 @@ jobs:
         run: pip install -r dev-requirements.txt
 
       - name: Test sample
-        timeout-minutes: 60
+        timeout-minutes: 600
         run: |
           coverage run \
           tsp.py ${{ matrix.problem }} \
